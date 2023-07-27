@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style/style.css"> 
   
   <title>Frontend Mentor | Results summary component</title>
 
@@ -16,32 +18,72 @@
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <main class="content">
+    <div class="result">
+      <h1>Your Result</h1>
+      <div class="circle">
+        <h1>76</h1>
+        <small>of 100</small>
+      </div>
+      <h2>Great</h2>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    
+    <div class="summary">
+      <h2>Summary</h2>
+      <ul>
+        <li class="red">
+          <div class="icon">
+            <i>
+              <img src="assets/images/icon-reaction.svg" alt="">
+            </i>
+            Reaction
+          </div>
+          <div class="number">
+            <span>80</span> / 100
+          </div>
+        </li>
+        <li class="Orangey">
+          <div class="icon">
+            <i>
+              <img src="assets/images/icon-memory.svg" alt="">
+            </i>
+            Memory
+          </div>
+          <div class="number">
+            <span>92</span> / 100
+          </div>
+        </li>
+        <li class="Green">
+          <div class="icon">
+            <i>
+              <img src="assets/images/icon-verbal.svg" alt="">
+            </i>
+            Verbal
+          </div>
+          <div class="number">
+            <span>61</span> / 100
+          </div>
+        </li>
+        <li class="Cobalt">
+          <div class="icon">
+            <i>
+              <img src="assets/images/icon-visual.svg" alt="">
+            </i>
+            Visual
+          </div>
+          <div class="number">
+            <span>72</span> / 100
+          </div>
+        </li>
+      </ul>
+      <button type="submit">Continue</button>
+    </div>
+  </main>
   
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
