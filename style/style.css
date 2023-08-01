@@ -206,6 +206,7 @@ button:hover {
     .result {
         border-radius: 0px 0px 30px 30px;
         width: 100vw;
+        padding: 35px;
     }
 
     .result p {
@@ -215,5 +216,6 @@ button:hover {
     .summary {
         border-radius: 0px;
         width: 100%;
+        padding: 29px
     }
 }
