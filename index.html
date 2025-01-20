@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style/style.css">
   
   <title>Frontend Mentor | Results summary component</title>
 
@@ -16,32 +23,47 @@
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="content">
+      <div class="content-left">
+        <h1 class="result" >Your Result</h1>
+        <div class="number-result">
+          <span>76</span>
+          <small>of 100</small>
+        </div>
+        <div class="description">
+          <h2>Great</h2>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+      
+      <div class="content-right">
+        <h2>Summary</h2>
+        <div class="descriptio-right">
+          <div class="reaction sum">
+            <span><i><img src="assets/images/icon-reaction.svg" class="icon reaction" alt="reaction"></i> Reaction</span>
+            <span>80 <small>/ 100</small></span>
+          </div>
+          <div class="memory sum">
+            <span><i><img src="assets/images/icon-memory.svg" class="icon memory" alt="memory"></i> Memory</span>
+            <span>92<small> / 100</small></span>
+          </div>
+          <div class="verbal sum">
+            <span><i><img src="assets/images/icon-verbal.svg" class="icon verbal" alt="verbal"></i> Verbal</span>
+            <span>61 <small>/ 100</small></span>
+          </div>
+          <div class="visual sum">
+            <span><i><img src="assets/images/icon-visual.svg" class="icon visual" alt="visual"></i> Visual</span>
+            <span>72 <small>/ 100</small></span>
+          </div>
+        </div>
+        <a href="" class="button">Continue</a>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
 </body>
 </html>
