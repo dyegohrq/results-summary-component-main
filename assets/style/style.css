@@ -48,6 +48,9 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container .content .content-left {
@@ -60,10 +63,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   gap: 24px;
-  padding: 30px;
+  padding: 80px 60px;
+  flex: 1;
 }
 
 .container .content .content-left .result {
@@ -120,6 +124,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .container .content .content-right h2 {
@@ -221,22 +226,17 @@ body {
     width: 100%;
     max-width: 736px;
     height: auto;
-    display: flex;
-    justify-content: space-between;
     background-color: var(--White);
     border-radius: 32px;
     overflow: hidden;
+    flex-direction: row;
   }
 
   .container .content .content-left {
-    flex: 1;
     border-radius: 32px;
     justify-content: space-between;
     padding: 55px 30px;
-  }
 
-  .container .content .content-right {
-    flex: 1;
   }
 
   .attribution {
